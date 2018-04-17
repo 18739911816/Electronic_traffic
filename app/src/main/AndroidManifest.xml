@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ut.electronictraffic"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15"></uses-sdk>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+    <application
+        android:name=".carApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@7F020021"
+        android:label="@7F050000">
+        <activity
+            android:name=".MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@7F050000"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="0x00000020">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+
+                <category android:name="android.intent.category.HOME"></category>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="0"></activity>
+    </application>
+</manifest>
